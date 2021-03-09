@@ -10,6 +10,6 @@ There are probably lots of things that could be improved, if you find any make s
 
 ## License 📄
 
-This proyect is [MIT](https://choosealicense.com/licenses/mit/) licenced
+This project is [MIT](https://choosealicense.com/licenses/mit/) licenced
 
 ⌨️ with ❤️ by [Ukliz](https://github.com/Uklizdev) 😊
