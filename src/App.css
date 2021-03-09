@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+		sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, rgba(48, 16, 255, 1) 0%, rgba(100, 115, 255, 1) 100%);
+}
+.App {
+	display: flex;
+	flex-direction: coslumn;
+	justify-content: start;
+	width: 520px;
+	min-height: 600px;
+	background: #161a2b;
+	text-align: center;
+	margin: 128px auto;
+	border-radius: 10px;
+	padding-bottom: 32px;
+}
+
+h1 {
+	margin: 32px 0;
+	color: #fff;
+	font-size: 24px;
+}
+
+.player-form {
+	margin-bottom: 32px;
+}
+
+.player-input {
+	padding: 14px 32px 14px 16px;
+	border-radius: 4px;
+	border: 2px solid #5d0cff;
+	margin: 10px auto;
+	outline: none;
+	width: 450px;
+	background: #5d0cff6c;
+	color: #fff;
+}
+
+.player-input::placeholder {
+	color: #e2e2e2;
+}
+
+.inner-input {
+	margin: 5px;
+}
+
+.name-input {
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.points-input {
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+	width: 15%;
+}
+
+.player-button {
+	padding: 16px;
+	margin-left: 30px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	outline: none;
+	background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.player-row {
+	display: flex;
+	margin: 4px auto;
+	color: #fff;
+	background: linear-gradient(90deg, rgba(255, 118, 20, 1) 0%, rgba(255, 84, 17, 1) 100%);
+	padding: 16px;
+	border-radius: 5px;
+	justify-content: center;
+	width: 100%;
+}
+
+.player-name {
+	padding: 7px;
+	font-size: 18px;
+	margin-left: 20px;
+	align-self: center;
+}
+
+.counter-container {
+	margin-left: 70px;
+}
+
+.counter-element {
+	display: flex;
+}
+
+.counter-points {
+	height: 30px;
+	width: 40%;
+	font-size: 16px;
+}
+
+.points-title {
+	padding: 7px;
+	font-size: 17px;
+	margin-top: 2px;
+	align-self: center;
+}
+
+.player-row:nth-child(4n + 1) {
+	background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+}
+
+.player-row:nth-child(4n + 2) {
+	background: linear-gradient(90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%);
+}
+
+.player-row:nth-child(4n + 3) {
+	background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
+}
+
+.container {
+	margin: 10px auto;
+}
