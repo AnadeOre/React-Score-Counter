@@ -5,7 +5,7 @@ import PlayerList from './PlayerList';
 import SettingsSet from './SettingsSet'
 
 function App() {
-
+  //Variables for game settings
   const [endScore, setEndScore] = useState(500);
   const [isReverse, setIsReverse] = useState(false);
 

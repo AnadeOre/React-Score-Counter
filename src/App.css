@@ -10,6 +10,12 @@ body {
 	background: linear-gradient(90deg, rgba(48, 16, 255, 1) 0%, rgba(100, 115, 255, 1) 100%);
 }
 
+h1 {
+	margin: 32px 0;
+	color: #fff;
+	font-size: 24px;
+}
+
 .overall-container {
 	display: flex;
 }
@@ -27,6 +33,7 @@ body {
 	padding-bottom: 32px;
 }
 
+/*Settings component*/
 .setting-container {
 	display: flex;
 	flex-direction: column;
@@ -40,11 +47,45 @@ body {
 	padding-bottom: 32px;
 }
 
-h1 {
-	margin: 32px 0;
-	color: #fff;
-	font-size: 24px;
+.checkbox-label {
+	color: white;
+	font-size: 17px;
+	margin: 10px;
 }
+
+.checkbox {
+	margin: 2px;
+}
+
+.settings-set {
+	color: white;
+	font-size: 17px;
+	margin: 30px auto;
+}
+
+.points-input {
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+	width: 60%;
+	margin: 10px;
+}
+
+.set-text {
+	margin: 10px;
+}
+
+.reverse-text {
+	text-transform: capitalize;
+}
+
+/*Player list component*/
+
+.container {
+	margin: 10px auto;
+}
+
+/*Player form component*/
 
 .player-form {
 	margin-bottom: 32px;
@@ -87,6 +128,8 @@ h1 {
 	text-transform: capitalize;
 }
 
+/*Player component*/
+
 .player-row {
 	display: flex;
 	margin: 4px auto;
@@ -104,6 +147,20 @@ h1 {
 	margin-left: 20px;
 	align-self: center;
 }
+
+.player-row:nth-child(4n + 1) {
+	background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+}
+
+.player-row:nth-child(4n + 2) {
+	background: linear-gradient(90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%);
+}
+
+.player-row:nth-child(4n + 3) {
+	background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
+}
+
+/*Counter component*/
 
 .counter-container {
 	margin-left: 70px;
@@ -124,52 +181,4 @@ h1 {
 	font-size: 17px;
 	margin-top: 2px;
 	align-self: center;
-}
-
-.player-row:nth-child(4n + 1) {
-	background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
-}
-
-.player-row:nth-child(4n + 2) {
-	background: linear-gradient(90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%);
-}
-
-.player-row:nth-child(4n + 3) {
-	background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
-}
-
-.container {
-	margin: 10px auto;
-}
-
-.checkbox-label {
-	color: white;
-	font-size: 17px;
-	margin: 10px;
-}
-
-.checkbox {
-	margin: 2px;
-}
-
-.settings-set {
-	color: white;
-	font-size: 17px;
-	margin: 30px auto;
-}
-
-.points-input {
-	height: 30px;
-	text-align: center;
-	font-size: 15px;
-	width: 60%;
-	margin: 10px;
-}
-
-.set-text {
-	margin: 10px;
-}
-
-.reverse-text {
-	text-transform: capitalize;
 }
