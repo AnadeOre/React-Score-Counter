@@ -9,15 +9,33 @@
 body {
 	background: linear-gradient(90deg, rgba(48, 16, 255, 1) 0%, rgba(100, 115, 255, 1) 100%);
 }
+
+.overall-container {
+	display: flex;
+}
+
 .App {
 	display: flex;
-	flex-direction: coslumn;
-	justify-content: start;
+	flex-direction: column;
+	justify-content: flex-start;
 	width: 520px;
-	min-height: 600px;
+	min-height: 500px;
 	background: #161a2b;
 	text-align: center;
-	margin: 128px auto;
+	margin: 80px auto;
+	border-radius: 10px;
+	padding-bottom: 32px;
+}
+
+.setting-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 235px;
+	height: 300px;
+	background: #161a2b;
+	text-align: center;
+	margin: 80px -20% 128px 50px;
 	border-radius: 10px;
 	padding-bottom: 32px;
 }
@@ -55,13 +73,6 @@ h1 {
 	height: 30px;
 	text-align: center;
 	font-size: 15px;
-}
-
-.points-input {
-	height: 30px;
-	text-align: center;
-	font-size: 15px;
-	width: 15%;
 }
 
 .player-button {
@@ -129,4 +140,36 @@ h1 {
 
 .container {
 	margin: 10px auto;
+}
+
+.checkbox-label {
+	color: white;
+	font-size: 17px;
+	margin: 10px;
+}
+
+.checkbox {
+	margin: 2px;
+}
+
+.settings-set {
+	color: white;
+	font-size: 17px;
+	margin: 30px auto;
+}
+
+.points-input {
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+	width: 60%;
+	margin: 10px;
+}
+
+.set-text {
+	margin: 10px;
+}
+
+.reverse-text {
+	text-transform: capitalize;
 }
