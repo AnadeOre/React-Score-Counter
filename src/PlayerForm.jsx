@@ -27,7 +27,7 @@ function PlayerForm(props) {
 						placeholder='Add a player'
 						value={inputName}
 						onChange={handleNameChange}
-						maxLength='12'
+						maxLength='8'
 					/>
 					<button className='player-button'>Add Player</button>
 				</div>
