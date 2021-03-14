@@ -26,7 +26,7 @@ function GameSettings(props) {
 
 	return (
 		<div>
-			<h1>Game Settings</h1>
+			<h2 className='settings-title'>Game Settings</h2>
 			<form className='settings-form' onSubmit={setSettings}>
 				<label className='checkbox-label'>
 					Reverse:

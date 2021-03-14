@@ -20,7 +20,7 @@ function App() {
         <GameSettings onSubmit={handleSettings} />
         <SettingsSet endScoreToShow={endScore} reverseToShow={isReverse} />
       </div>
-      <div className="App">
+      <div className="App viewport">
         <PlayerList endScore={endScore} isReverse={isReverse} />
       </div>
     </div>

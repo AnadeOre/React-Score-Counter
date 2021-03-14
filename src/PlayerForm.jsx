@@ -20,13 +20,14 @@ function PlayerForm(props) {
 	return (
 		<div>
 			<form className='player-form' onSubmit={handleSubmit}>
-				<div className='player-input'>
+				<div className='player-input container'>
 					<input
 						className='inner-input name-input'
 						type='text'
 						placeholder='Add a player'
 						value={inputName}
 						onChange={handleNameChange}
+						maxLength='12'
 					/>
 					<button className='player-button'>Add Player</button>
 				</div>

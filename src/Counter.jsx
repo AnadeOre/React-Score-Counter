@@ -49,7 +49,7 @@ const Counter = props => {
 	};
 
 	return (
-		<div className='counter-element'>
+		<div className='counter-element container'>
 			<h4 className='points-title'>Points: {totalPoints}</h4>
 			<div>
 				<form onSubmit={handlePointsSubmit}>

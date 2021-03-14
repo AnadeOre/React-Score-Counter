@@ -3,9 +3,9 @@ import Counter from './Counter';
 
 function Player({ players, endScore, isReverse }) {
 	return players.map((player, index) => (
-		<div className='player-row' key={index}>
-			<div key={player.id} className='player-name'>
-				<h3>{player.name}</h3>
+		<div className='player-row ' key={index}>
+			<div key={player.id}>
+				<h3 className='player-name'>{player.name}</h3>
 			</div>
 			<div className='counter-container'>
 				<Counter
