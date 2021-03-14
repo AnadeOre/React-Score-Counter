@@ -4,14 +4,9 @@ function GameSettings(props) {
 	const [endScoreInput, setEndScoreInput] = useState('');
 	const [reverseInput, setReverseInput] = useState(false);
 
-	let endScoreToShow = 500;
-	let reverseToShow = false;
-
 	const setSettings = e => {
 		e.preventDefault();
 		props.onSubmit({ scoreToFinish: endScoreInput, isItReverse: reverseInput });
-		endScoreToShow = endScoreInput;
-		reverseToShow = reverseInput;
 		setEndScoreInput('');
 		setReverseInput(false);
 	};
