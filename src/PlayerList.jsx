@@ -12,7 +12,7 @@ function PlayerList({ endScore, isReverse }) {
 
 	return (
 		<div className='container'>
-			<h1>Score Counter with React!</h1>
+			<h1>Score Counter!</h1>
 			<PlayerForm onSubmit={addPlayer} />
 			<Player players={players} endScore={endScore} isReverse={isReverse} />
 		</div>
