@@ -5,6 +5,11 @@ import PlayerList from './PlayerList';
 import SettingsSet from './SettingsSet'
 
 function App() {
+  //Tab name
+  useEffect(() => {
+    document.title = "Score Counter"
+  }, [])
+
   //Variables for game settings
   const [endScore, setEndScore] = useState(500);
   const [isReverse, setIsReverse] = useState(false);
