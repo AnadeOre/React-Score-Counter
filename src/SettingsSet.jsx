@@ -1,7 +1,6 @@
 import React from 'react';
 
 function SettingsSet({ endScoreToShow, reverseToShow }) {
-	console.log(endScoreToShow, reverseToShow);
 	return (
 		<div>
 			<div className='settings-set'>

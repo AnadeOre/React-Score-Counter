@@ -8,7 +8,6 @@ function GameSettings(props) {
 		e.preventDefault();
 		props.onSubmit({ scoreToFinish: endScoreInput, isItReverse: reverseInput });
 		setEndScoreInput('');
-		setReverseInput(false);
 	};
 
 	const handleChangeEndScore = e => {
