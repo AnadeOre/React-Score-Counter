@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Counter = props => {
 	let { id, point, playersArr, endScore, isReverse } = props;
 	const [totalPoints, setTotalPoints] = useState(point);
+	const [pointsValue, setPointsValue] = useState(0);
 
 	const updatePlayerPoints = (id, addPoints, playersArray) => {
 		const playerToUpdate = playersArray.filter(player => player.id === id);
@@ -11,6 +12,7 @@ const Counter = props => {
 			if (!isReverse && player.points >= endScore) setWhoWins(playersArray);
 			if (isReverse && player.points >= endScore) setWhoWinsReverse(playersArray);
 		});
+		console.log(playersArray);
 	};
 
 	const setWhoWinsReverse = allPlayers => {
@@ -43,9 +45,9 @@ const Counter = props => {
 
 	const handlePointsSubmit = e => {
 		e.preventDefault();
-		const morePoints = e.target[0].valueAsNumber;
-		setTotalPoints(totalPoints + morePoints);
-		updatePlayerPoints(id, morePoints, playersArr);
+		setTotalPoints(totalPoints + pointsValue);
+		updatePlayerPoints(id, pointsValue, playersArr);
+		setPointsValue(0);
 	};
 
 	return (
@@ -53,7 +55,11 @@ const Counter = props => {
 			<h4 className='points-title'>Points: {totalPoints}</h4>
 			<div>
 				<form onSubmit={handlePointsSubmit}>
-					<input type='number' className='counter-points' />
+					<input
+						onChange={e => setPointsValue(e.target.valueAsNumber)}
+						type='number'
+						className='counter-points'
+					/>
 				</form>
 			</div>
 		</div>
